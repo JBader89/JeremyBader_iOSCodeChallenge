@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F49512EA0021BA0B775F1A7 /* Pods_JeremyBader__iOSCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E9EEEB3CD0CD100943924D /* Pods_JeremyBader__iOSCodeChallenge.framework */; };
+		B8376A83204376100043D905 /* bebasneue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8376A82204376100043D905 /* bebasneue.ttf */; };
 		B89F26A72043526C00C0579B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F26A62043526C00C0579B /* AppDelegate.swift */; };
-		B89F26A92043526C00C0579B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F26A82043526C00C0579B /* ViewController.swift */; };
+		B89F26A92043526C00C0579B /* RedditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89F26A82043526C00C0579B /* RedditViewController.swift */; };
 		B89F26AC2043526C00C0579B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89F26AA2043526C00C0579B /* Main.storyboard */; };
 		B89F26AE2043526C00C0579B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89F26AD2043526C00C0579B /* Assets.xcassets */; };
 		B89F26B12043526C00C0579B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89F26AF2043526C00C0579B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3DC365278199980A6BAD47 /* Pods-JeremyBader__iOSCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeremyBader__iOSCodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-JeremyBader__iOSCodeChallenge/Pods-JeremyBader__iOSCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5218CEF1C10AA131C5AC5424 /* Pods-JeremyBader__iOSCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeremyBader__iOSCodeChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JeremyBader__iOSCodeChallenge/Pods-JeremyBader__iOSCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B8376A82204376100043D905 /* bebasneue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bebasneue.ttf; sourceTree = "<group>"; };
 		B89F26A32043526C00C0579B /* JeremyBader__iOSCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeremyBader__iOSCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89F26A62043526C00C0579B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B89F26A82043526C00C0579B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B89F26A82043526C00C0579B /* RedditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditViewController.swift; sourceTree = "<group>"; };
 		B89F26AB2043526C00C0579B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B89F26AD2043526C00C0579B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B89F26B02043526C00C0579B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B89F26B22043526C00C0579B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E9EEEB3CD0CD100943924D /* Pods_JeremyBader__iOSCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeremyBader__iOSCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F49512EA0021BA0B775F1A7 /* Pods_JeremyBader__iOSCodeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3131EC44CE2686BE99D45ED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5218CEF1C10AA131C5AC5424 /* Pods-JeremyBader__iOSCodeChallenge.debug.xcconfig */,
+				2C3DC365278199980A6BAD47 /* Pods-JeremyBader__iOSCodeChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FF75C7E08C83A9B99594F53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E9EEEB3CD0CD100943924D /* Pods_JeremyBader__iOSCodeChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B89F269A2043526C00C0579B = {
 			isa = PBXGroup;
 			children = (
 				B89F26A52043526C00C0579B /* JeremyBader__iOSCodeChallenge */,
 				B89F26A42043526C00C0579B /* Products */,
+				3131EC44CE2686BE99D45ED9 /* Pods */,
+				7FF75C7E08C83A9B99594F53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				B89F26A62043526C00C0579B /* AppDelegate.swift */,
-				B89F26A82043526C00C0579B /* ViewController.swift */,
+				B89F26A82043526C00C0579B /* RedditViewController.swift */,
 				B89F26AA2043526C00C0579B /* Main.storyboard */,
 				B89F26AD2043526C00C0579B /* Assets.xcassets */,
 				B89F26AF2043526C00C0579B /* LaunchScreen.storyboard */,
 				B89F26B22043526C00C0579B /* Info.plist */,
+				B8376A82204376100043D905 /* bebasneue.ttf */,
 			);
 			path = JeremyBader__iOSCodeChallenge;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B89F26B52043526C00C0579B /* Build configuration list for PBXNativeTarget "JeremyBader__iOSCodeChallenge" */;
 			buildPhases = (
+				1715C19DDB6CDDEB5872CAF8 /* [CP] Check Pods Manifest.lock */,
 				B89F269F2043526C00C0579B /* Sources */,
 				B89F26A02043526C00C0579B /* Frameworks */,
 				B89F26A12043526C00C0579B /* Resources */,
+				F7A5183D69D020C538B43D9C /* [CP] Embed Pods Frameworks */,
+				3AD7AA1DA006991E0A9B63E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,17 +156,66 @@
 				B89F26B12043526C00C0579B /* LaunchScreen.storyboard in Resources */,
 				B89F26AE2043526C00C0579B /* Assets.xcassets in Resources */,
 				B89F26AC2043526C00C0579B /* Main.storyboard in Resources */,
+				B8376A83204376100043D905 /* bebasneue.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1715C19DDB6CDDEB5872CAF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3AD7AA1DA006991E0A9B63E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JeremyBader__iOSCodeChallenge/Pods-JeremyBader__iOSCodeChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A5183D69D020C538B43D9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JeremyBader__iOSCodeChallenge/Pods-JeremyBader__iOSCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B89F269F2043526C00C0579B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89F26A92043526C00C0579B /* ViewController.swift in Sources */,
+				B89F26A92043526C00C0579B /* RedditViewController.swift in Sources */,
 				B89F26A72043526C00C0579B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +351,7 @@
 		};
 		B89F26B62043526C00C0579B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5218CEF1C10AA131C5AC5424 /* Pods-JeremyBader__iOSCodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +367,7 @@
 		};
 		B89F26B72043526C00C0579B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3DC365278199980A6BAD47 /* Pods-JeremyBader__iOSCodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
