@@ -6,7 +6,7 @@ target 'JeremyBader__iOSCodeChallenge' do
   use_frameworks!
 
   # Pods for JeremyBader__iOSCodeChallenge
-  pod 'SnapKit', '~> 4.0.0'
+  pod 'PureLayout'
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.6'
 
