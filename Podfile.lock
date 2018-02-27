@@ -1,18 +1,18 @@
 PODS:
   - Alamofire (4.6.0)
-  - PureLayout (3.0.2)
+  - SnapKit (4.0.0)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
-  - PureLayout
+  - SnapKit (~> 4.0.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 9575c5b6743172aa6c6043b8e97bb5a6ef0b9ecf
+PODFILE CHECKSUM: 5bff46f487063dc346e14dbb3505542627fbb382
 
 COCOAPODS: 1.2.1

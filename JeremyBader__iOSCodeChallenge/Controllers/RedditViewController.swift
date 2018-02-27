@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SnapKit
 
 class RedditViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
 
     private let cellId = "cellId"
+    
+    var didSetupConstraints = false
     
     lazy var searchBar = UISearchBar(frame: CGRect.zero)
     lazy var tableView: UITableView = {
@@ -50,23 +53,34 @@ class RedditViewController: UIViewController, UISearchBarDelegate, UITableViewDa
     
     func configureTableView() {
         self.view.addSubview(tableView)
-        setupAutoLayout()
     }
     
-    func setupAutoLayout() {
+    override func updateViewConstraints() {
         
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        if (!didSetupConstraints) {
+            
+            self.tableView.snp.makeConstraints { make in
+                make.edges.equalTo(0)
+            }
+            
+            didSetupConstraints = true
+        }
+        
+        super.updateViewConstraints()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellId, for: indexPath) as! PostTableViewCell
+        let backgroundImage = UIImage(named: "bg")
+        cell.backgroundView = UIImageView(image: backgroundImage)
         return cell
     }
 
